@@ -13,6 +13,8 @@ import java.io.IOException;
 public class WordcountDriver {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 
+        args = new String[]{"/Users/xbvern/Downloads/input1/","/Users/xbvern/Downloads/output"};
+
         // 1 获取配置信息以及封装任务
         Configuration configuration = new Configuration();
         Job job = Job.getInstance(configuration);
