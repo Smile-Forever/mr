@@ -24,6 +24,8 @@ public class WordcountMapper extends Mapper<LongWritable, Text,Text, IntWritable
     protected void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
 
+        System.out.println(key.toString());
+
         //1.获取一行
         String line = value.toString();
         //2.切割单词
